@@ -15,8 +15,8 @@ const config: StorybookConfig = {
   },
   staticDirs: [
     {
-        from: "../src",
-        to: "src"
+        from: "../public",
+        to: "public"
     },
 ]
 
