@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { geistSans } from "@/lib/fonts";
+import { GeistSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Lucy Ivatt's Portfolio",
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable}`}>{children}</body>
+      <body className={`${GeistSans.variable}`}>{children}</body>
     </html>
   );
 }
