@@ -4,18 +4,18 @@ const config: Config = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/stroies/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/stories/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      colors:{ 
+      colors: { 
         background: '#1C1B23',
         foreground: '#b07ff0'
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
       },
-    },
+    }
   },
   plugins: [],
 };
