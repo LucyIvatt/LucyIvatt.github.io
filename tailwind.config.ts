@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{ 
+        background: '#1C1B23',
+        foreground: '#b07ff0'
+      },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
       },

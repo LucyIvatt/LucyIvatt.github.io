@@ -1,5 +1,5 @@
 export default {
-  title: "Example/NoComponent",
+  title: "General/Typography",
 };
 
 export const BasicStory = () => (
