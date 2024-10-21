@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: { 
         background: '#1C1B23',
-        foreground: '#b07ff0'
+        foreground: '#b07ff0',
+        example: '#2c2a40'
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],

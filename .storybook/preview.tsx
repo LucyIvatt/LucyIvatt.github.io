@@ -6,7 +6,7 @@ import "../src/styles/globals.css";
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <div className={`${GeistSans.variable}`}>
+      <div className={`${GeistSans.variable} bg-background`}>
         <Story />
       </div>
     ),

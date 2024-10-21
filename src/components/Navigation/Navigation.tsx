@@ -15,11 +15,11 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between py-4 px-6 items-center text-white bg-background">
+    <nav className="flex justify-between py-4 items-center text-white bg-background border-b-2 px-4 mx-4 border-example">
       <h1 className="pr-6">
         <span className="bg-gradient-to-b from-foreground to-purple-300 bg-clip-text text-transparent">
           Lucy
-        </span>
+        </span>{" "}
         Ivatt
       </h1>
       <div className="flex items-center gap-6">
