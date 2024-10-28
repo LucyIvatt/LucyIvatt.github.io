@@ -3,22 +3,14 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-white dark:bg-background;
+  html {
+    @apply bg-white dark:bg-background dark:text-white font-sans;
   }
-  p {
-    @apply dark:text-white text-black font-sans;
-  }
-
   h1 {
-    @apply text-4xl font-bold font-sans dark:text-white text-black;
+    @apply text-4xl font-bold;
   }
 
   h2 {
-    @apply text-2xl font-sans dark:text-white text-black;
-  }
-
-  li {
-    @apply font-sans;
+    @apply text-2xl;
   }
 }

@@ -3,7 +3,7 @@ import { Navigation } from "@/components/Navigation/Navigation";
 
 export default function Home() {
   return (
-    <div className="bg-background">
+    <div>
       <Navigation />
       <Hero />
     </div>
