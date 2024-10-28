@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 const links: [string, string][] = [
-  ["About", "#placeholder"],
-  ["Education", "#placeholder"],
-  ["Experience", "#placeholder"],
-  ["Projects", "#placeholder"],
+  ["About", "#about"],
+  ["Education", "#education"],
+  ["Experience", "#experience"],
+  ["Projects", "#projects"],
 ];
 
 export const Navigation = () => {
@@ -27,17 +27,19 @@ export const Navigation = () => {
           {links.map(([text, link]) => (
             <li
               key={text}
-              className="hover:bg-gradient-to-b hover:from-foreground hover:to-purple-300 hover:bg-clip-text hover:text-transparent"
+              className="hover:bg-gradient-to-b hover:from-foreground hover:to-purple-300 hover:bg-clip-text hover:text-transparent focus:border-foreground"
             >
               <a href={link}>{text}</a>
             </li>
           ))}
         </ul>
-        <BsFillMoonStarsFill className="hover:text-foreground" />
-        <GiHamburgerMenu
-          className="hover:text-foreground md:hidden"
+        <ThemeToggle />
+        <button
+          className="hover:text-foreground focus:border-foreground md:hidden"
           onClick={() => setIsOpen(!isOpen)}
-        />
+        >
+          <GiHamburgerMenu />
+        </button>
       </div>
     </nav>
   );
