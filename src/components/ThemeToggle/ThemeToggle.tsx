@@ -1,6 +1,6 @@
 import { Theme } from "@/utils/constants";
 import React, { useEffect, useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 export const ThemeToggle = () => {
   const [theme, setTheme] = useState(() => {
@@ -24,7 +24,8 @@ export const ThemeToggle = () => {
       onClick={toggleTheme}
       className="hover:text-foreground focus:border-foreground"
     >
-      <BsFillMoonStarsFill />
+      {theme == Theme.Dark && <BsFillMoonStarsFill data-testid="moon-icon" />}
+      {theme == Theme.Light && <BsFillSunFill data-testid="sun-icon" />}
     </button>
   );
 };

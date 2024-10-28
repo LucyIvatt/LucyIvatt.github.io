@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-white dark:bg-background;
+  }
   p {
-    @apply text-white font-sans;
+    @apply dark:text-white text-black font-sans;
   }
 
   h1 {
-    @apply text-4xl font-bold font-sans text-white;
+    @apply text-4xl font-bold font-sans dark:text-white text-black;
   }
 
   h2 {
-    @apply text-2xl font-sans text-white;
+    @apply text-2xl font-sans dark:text-white text-black;
   }
 
   li {

@@ -15,7 +15,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between py-4 items-center text-white bg-background border-b-2 px-4 mx-4 border-example">
+    <nav className="flex justify-between py-4 items-center border-b-2 px-4 mx-4 dark:border-example">
       <h1 className="pr-6">
         <span className="bg-gradient-to-b from-foreground to-purple-300 bg-clip-text text-transparent">
           Lucy

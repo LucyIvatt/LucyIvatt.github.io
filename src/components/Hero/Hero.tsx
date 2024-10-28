@@ -15,9 +15,9 @@ export const Hero = () => {
         <h1>👋 Hi, I&apos;m Lucy Ivatt</h1>
         <h2>👩‍💻 A software developer based in Leeds</h2>
         <p>
-          I'm a Software Engineer at Create Future. I recently completed my MEng
-          in Computer Science from the University of York, graduating with First
-          Class Honours with Distinction
+          I&apos;m a Software Engineer at Create Future. I recently completed my
+          MEng in Computer Science from the University of York, graduating with
+          First Class Honours with Distinction
         </p>
       </div>
     </div>
