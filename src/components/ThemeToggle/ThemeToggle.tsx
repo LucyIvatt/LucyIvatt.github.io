@@ -3,15 +3,9 @@ import React, { useEffect, useState } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 export const ThemeToggle = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") ?? Theme.Dark;
-  });
-
-  const toggleTheme = () => {
-    const newTheme = theme === Theme.Dark ? Theme.Light : Theme.Dark;
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
+  const [theme, setTheme] = useState(Theme.Dark);
+  const toggleTheme = () =>
+    setTheme(theme == Theme.Dark ? Theme.Light : Theme.Dark);
 
   useEffect(() => {
     if (theme === Theme.Dark)

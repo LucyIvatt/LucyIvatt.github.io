@@ -3,29 +3,11 @@ import { ThemeToggle } from "./ThemeToggle";
 import { Theme } from "@/utils/constants";
 import "@testing-library/jest-dom";
 
-beforeEach(() => {
-  Storage.prototype.setItem = jest.fn();
-  Storage.prototype.getItem = jest.fn().mockReturnValue(Theme.Dark);
-  jest.clearAllMocks();
-});
-
 describe("ThemeToggle Component", () => {
-  it("should apply the dark theme by default if localStorage is empty", () => {
-    Storage.prototype.getItem = jest.fn(() => null);
-
+  it("should apply the dark theme by default", () => {
     render(<ThemeToggle />);
 
     expect(document.querySelector("html")?.classList.contains("dark")).toBe(
-      true
-    );
-  });
-
-  it("should load theme from localStorage", () => {
-    Storage.prototype.getItem = jest.fn().mockReturnValue(Theme.Light);
-
-    render(<ThemeToggle />);
-
-    expect(document.querySelector("html")?.classList.contains("dark")).not.toBe(
       true
     );
   });
@@ -50,20 +32,6 @@ describe("ThemeToggle Component", () => {
     expect(document.querySelector("html")?.classList.contains("dark")).toBe(
       true
     );
-  });
-
-  it("should save theme to local storage on toggle", () => {
-    render(<ThemeToggle />);
-
-    const button = screen.getByRole("button");
-
-    fireEvent.click(button);
-
-    expect(localStorage.setItem).toHaveBeenCalledWith("theme", Theme.Light);
-
-    fireEvent.click(button);
-
-    expect(localStorage.setItem).toHaveBeenCalledWith("theme", Theme.Dark);
   });
 
   it("should change icon on toggle", () => {
