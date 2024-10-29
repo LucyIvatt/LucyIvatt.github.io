@@ -4,8 +4,14 @@
 
 @layer base {
   html {
-    @apply bg-white dark:bg-background dark:text-white font-sans;
+    @apply bg-white dark:bg-background dark:text-white;
   }
+
+  /* prettier-ignore */
+  h1, h2, p, li {
+    @apply font-sans;
+  }
+
   h1 {
     @apply text-4xl font-bold;
   }
