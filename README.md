@@ -5,4 +5,4 @@
 ![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
 <img alt="Next JS" src="https://img.shields.io/badge/nextjs-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white"/>
 
-Portfolio site created using react, tailwind & Next.JS - deployed via github pages.
+Portfolio site created using react, tailwind & Next.JS - deployed via github pages
